@@ -4,12 +4,14 @@
 
 **建议使用这位`devin1014`的[DLNA-Cast](https://github.com/devin1014/DLNA-Cast)**
 
+**来源：https://github.com/SheTieJun/clingLib
 
 ## 已实现
 1. 基础投屏功能
-2. 本地资源投屏
+2. 本地资源投屏（支持图片，视频，音频）
 
-本项目主要是为自己的业务实现的，如果有需要请自行修改，不提供解决方案
+## 待实现
+录屏投屏
 
 ### 注意事项
 
