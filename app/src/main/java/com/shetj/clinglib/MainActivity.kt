@@ -188,7 +188,7 @@ class MainActivity : BaseBindingActivity<ActivityMainBinding, BaseViewModel>() {
         }
     }
 
-
+    //修改：支持本地视频，音频，图片投屏
     private fun choiceLocalVideoAndImage(title: String, type: ClingPlayType) {
         if (control == null){
             "请先选择设备".showToast()
@@ -207,6 +207,9 @@ class MainActivity : BaseBindingActivity<ActivityMainBinding, BaseViewModel>() {
                     }
                     ClingPlayType.TYPE_IMAGE -> {
                         setMediaType(ImageOnly)
+                    }
+                    ClingPlayType.TYPE_AUDIO -> {
+                        setMediaType(ActivityResultContracts.PickVisualMedia.SingleMimeType("audio/*"))
                     }
                     else -> {
                         Toast.makeText(this@MainActivity, "暂不支持", Toast.LENGTH_SHORT).show()
